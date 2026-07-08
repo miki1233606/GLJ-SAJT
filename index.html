@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLJ - Profesionalne Građevinske Usluge</title>
+    <meta name="description" content="GLJ - Profesionalne građevinske usluge u Inđiji, Srbija. Opsivke, oluci, hale, pokrivanje krovova.">
+    <meta name="keywords" content="građevina, krovovi, opsivke, oluci, Inđija, Srbija">
+    <meta name="author" content="GLJ">
+    <title>GLJ - Profesionalne Građevinske Usluge | Inđija</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23667eea'>🏗️</text></svg>">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header/Navigation -->
     <header>
         <div class="container">
             <div class="logo">
@@ -18,10 +22,12 @@
                 <ul>
                     <li><a href="#home">Početna</a></li>
                     <li><a href="#usluge">Usluge</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#o-nama">O Nama</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
+            <button class="menu-toggle">☰</button>
         </div>
     </header>
 
@@ -30,56 +36,178 @@
         <div class="hero-content">
             <h2>Gradimo Sa Stručnošću</h2>
             <p>Profesionalne građevinske usluge u Inđiji, Srbija</p>
-            <button class="cta-btn">Kontaktirajte Nas</button>
+            <button class="cta-btn" onclick="scrollToContact()">Kontaktirajte Nas</button>
         </div>
     </section>
 
-    <!-- Usluge -->
+    <!-- Usluge Section -->
     <section id="usluge" class="usluge">
         <div class="container">
             <h2>Naše Usluge</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>🏘️ Opsivke</h3>
-                    <p>Kvalitetno izvođenje fasadnih radova sa najboljim materijalima.</p>
+                    <div class="service-icon">🏢</div>
+                    <h3>Opsivke</h3>
+                    <p>Projektovanje i izvođenje fasadnih radova sa najboljim materijalima. Toplinska izolacija i zaštita.</p>
+                    <ul class="service-list">
+                        <li>✓ Projektovanje fasada</li>
+                        <li>✓ Montaža opsivki</li>
+                        <li>✓ Toplinska izolacija</li>
+                        <li>✓ Farbanje i zaštita</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <h3>💧 Oluci</h3>
-                    <p>Instalacija i održavanje oluka za zaštitu vaše kuće.</p>
+                    <div class="service-icon">💧</div>
+                    <h3>Oluci</h3>
+                    <p>Instalacija i održavanje oluka za zaštitu vaše kuće od vode. Kvalitetni materijali.</p>
+                    <ul class="service-list">
+                        <li>✓ Metal oluci</li>
+                        <li>✓ Plastični oluci</li>
+                        <li>✓ Cijevi za odvod</li>
+                        <li>✓ Čišćenje i održavanje</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <h3>🏭 Hale</h3>
-                    <p>Projektovanje i izgradnja hala po vašim potrebama.</p>
+                    <div class="service-icon">🏭</div>
+                    <h3>Hale</h3>
+                    <p>Projektovanje i izgradnja industrijskih i poljoprivrednih hala po vašim potrebama.</p>
+                    <ul class="service-list">
+                        <li>✓ Projektovanje</li>
+                        <li>✓ Čelična konstrukcija</li>
+                        <li>✓ Vrata i prozori</li>
+                        <li>✓ Elektroinstacije</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <h3>🏗️ Krovovi</h3>
-                    <p>Stručno pokrivanje i sanacija krovova.</p>
+                    <div class="service-icon">🏠</div>
+                    <h3>Krovovi</h3>
+                    <p>Stručno pokrivanje i sanacija krovova. Zaštita od curenja i vlage.</p>
+                    <ul class="service-list">
+                        <li>✓ Nove krovove</li>
+                        <li>✓ Sanacija starih</li>
+                        <li>✓ Popravka curenja</li>
+                        <li>✓ Izolacija i odvod</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- O Nama -->
-    <section id="o-nama" class="about">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>O Nama</h2>
-            <p>GLJ je vodeća tvrtka u Inđiji specijalizirana za sve vrste građevinskih radova. Sa iskustvom od više godina, ponosni smo što smo dio brojnih uspješnih projekata.</p>
+            <h2>Naši Projekti</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                        <div style="text-align: center; color: white;">
+                            <p style="font-size: 3rem; margin: 0;">🏢</p>
+                            <p>Fasadni radovi - Inđija</p>
+                        </div>
+                    </div>
+                    <h3>Fasadni Radovi - Stambena Zgrada</h3>
+                    <p>Kompletna fasada sa toplinskom izolacijom i završnim radovima. Vrijeme izvršenja: 4 sedmice.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                        <div style="text-align: center; color: white;">
+                            <p style="font-size: 3rem; margin: 0;">🏠</p>
+                            <p>Krovni radovi - Kuća</p>
+                        </div>
+                    </div>
+                    <h3>Pokrivanje Krovova - Privatna Kuća</h3>
+                    <p>Moderna krovna pokrivanja sa kvalitetnim materijalima. Garancija: 10 godina.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                        <div style="text-align: center; color: white;">
+                            <p style="font-size: 3rem; margin: 0;">💧</p>
+                            <p>Olučni radovi</p>
+                        </div>
+                    </div>
+                    <h3>Instalacija Oluka - Višekatnica</h3>
+                    <p>Kvalitetni metal oluci sa sistemom za odvod vode. Profesionalna instalacija.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                        <div style="text-align: center; color: white;">
+                            <p style="font-size: 3rem; margin: 0;">🏭</p>
+                            <p>Industrijska Hala</p>
+                        </div>
+                    </div>
+                    <h3>Gradnja Industrijske Hale</h3>
+                    <p>Moderna industrijska hala sa čeličnom konstrukcijom. Površina: 2000 m².</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Kontakt -->
+    <!-- O Nama Section -->
+    <section id="o-nama" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>O Nama</h2>
+                    <p>GLJ je vodeća tvrtka u Inđiji sa iskustvom od više od 15 godina u građevinarstvu. Specijalizirani smo za sve vrste građevinskih radova - od malih popravki do velikih industrijskih projekata.</p>
+                    <p>Naš tim iskusnih majstora i inženjera garantira kvalitetu i profesionalizam na svakom projektu. Koristimo samo najbolje materijale i moderne tehnike.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Završenih Projekata</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Godina Iskustva</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Zadovoljnih Klijenata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; height: 400px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <p style="font-size: 4rem;">🏗️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
     <section id="kontakt" class="contact">
         <div class="container">
             <h2>Kontaktirajte Nas</h2>
-            <p><strong>Telefon:</strong> +381 64 299 5541</p>
-            <p><strong>Lokacija:</strong> Inđija, Srbija</p>
-            <button class="cta-btn">Pozovi Nas</button>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>📞 Direktan Kontakt</h3>
+                    <p><strong>Telefon:</strong> <a href="tel:+381642995541">+381 64 299 5541</a></p>
+                    <p><strong>Lokacija:</strong> Inđija, Srbija</p>
+                    <p><strong>Radni Sati:</strong></p>
+                    <ul>
+                        <li>Ponedjeljak - Petak: 07:00 - 17:00</li>
+                        <li>Subota: 08:00 - 14:00</li>
+                        <li>Nedjelja: Zatvoreno</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Pošalji Poruku</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ime" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Telefon" required>
+                        <textarea placeholder="Poruka" rows="5" required></textarea>
+                        <button type="submit" class="cta-btn">Pošalji</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 GLJ - Gradimo sa Stručnošću! | Inđija, Srbija</p>
+        <div class="container">
+            <p>&copy; 2024 GLJ - Profesionalne Građevinske Usluge | Inđija, Srbija</p>
+            <p>Telefon: <a href="tel:+381642995541">+381 64 299 5541</a></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
